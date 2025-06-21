@@ -97,10 +97,10 @@
         "activityBarTop.activeBorder": "#50B8F8",
         "activityBar.activeFocusBorder": "",
         // ActivityBar Badges
-        "activityErrorBadge.foreground": "",
-        "activityErrorBadge.background": "",
-        "activityWarningBadge.background": "",
-        "activityWarningBadge.foreground": "",
+        "activityErrorBadge.foreground": "#FFAAA0",
+        "activityErrorBadge.background": "#80181099",
+        "activityWarningBadge.background": "#78601899",
+        "activityWarningBadge.foreground": "#f8da82",
 
         /*
       *------------------------------------------------*
