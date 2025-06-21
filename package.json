@@ -1,0 +1,21 @@
+{
+  "name": "oort-cloud-reverie",
+  "displayName": "oort-cloud-reverie",
+  "description": "Sea horses swiming in oort-clouds that are millions of colors, colors that you never knew existed. The sea horses sing a melody. Its a song about the absence of a god, and your scared, your scared you'll beco become infinately nothing, but t he sehorse andes fried mr walrus assures you that nothing is somthing, so even if your nothing that is somthing which isn't nothing, so nothing cannot be. He explains that is why there is something rather than nothing. How can there be somthing? nothing when nothing is in fact somthing, this is why rthe universe was forced into existance, and its why you will always exist. you may not be you, you may be me, I might be nothing, and I quicly replied, but that would be somthing. Indeed said the walrus, friend of the seahorses. A momement of silence between us, though we werent talking, the sea horses were singing, I still cant understand how a pich can be lower than any pitch I ever heard, while still being high.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Oort Cloud Reverie",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Oort Cloud Reverie-color-theme.json"
+      }
+    ]
+  }
+}
