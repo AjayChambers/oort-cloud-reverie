@@ -23,7 +23,7 @@
       *------------------------------------------------*
          -- EDITOR & SELECTION/HIGHLIGHTING --
       *------------------------------------------------*/
-        "editor.background": "#202024",
+        "editor.background": "#1F2025", // 20-20-24
         "editor.foreground": "#eeffff",
         // SUB-GROUP: Active Line
         "editor.lineHighlightBackground": "#00113322",
@@ -81,7 +81,7 @@
          -- ACTIVITY-BAR --
       *------------------------------------------------*/
         // BG
-        "activityBar.background": "#1D2130",
+        "activityBar.background": "#1F2025",
         "activityBarTop.background": "#11111100",
         "activityBar.activeBackground": "#55BBFF11",
         "activityBarTop.activeBackground": "#11111100",
@@ -146,12 +146,12 @@
          *------------------------------------------------*
          *---*[ SIDE-BAR ]*---*
          *------------------------------------------------*/
-        "sideBar.background": "#1A1D28",
+        "sideBar.background": "#1A1B22",
         "sideBar.foreground": "#AAAAAA",
         "sideBar.border": "#100503CC",
-        "sideBarSectionHeader.background": "#1A1D28",
-        "sideBarTitle.background": "#1A1D28",
-        "sideBarStickyScroll.background": "#1A1D28",
+        "sideBarSectionHeader.background": "#1A1B22",
+        "sideBarTitle.background": "#1A1B22",
+        "sideBarStickyScroll.background": "#1A1B22",
         "sideBarSectionHeader.foreground": "#B0B0B0",
         "sideBarSectionHeader.border": "#114466",
         "sideBarTitle.foreground": "#e1e1e6",
@@ -285,27 +285,27 @@
         *------------------------------------------------*
             *--* EDITOR TABS & TAB GROUPS *--*
         *------------------------------------------------*/
-        "editorGroupHeader.noTabsBackground": "#333328",
-        "editorGroupHeader.tabsBackground": "#222120",
+        "editorGroupHeader.noTabsBackground": "#1F2025",
+        "editorGroupHeader.tabsBackground": "#1F2025",
         "editorGroupHeader.tabsBorder": "#100503CC",
-        "editorGroupHeader.border": "#1A1D28",
+        "editorGroupHeader.border": "#1A1B22",
         // SUB-GROUP: Editor's Sticky Scroll
         "editorStickyScroll.shadow": "#0C040280",
         "editorStickyScroll.border": "#00000000",
-        "editorStickyScroll.background": "#1A1D28",
+        "editorStickyScroll.background": "#1A1B22",
         "scrollbar.shadow": "#0C0402FF",
         // SUB-GROUP: "Breadcrumbs"
-        "breadcrumb.background": "#1A1D28",
+        "breadcrumb.background": "#1A1B22",
         "breadcrumb.foreground": "#587A9C",
         "breadcrumb.activeSelectionForeground": "#e1e1e6",
         "breadcrumb.focusForeground": "#FFBB55",
         "breadcrumbPicker.background": "#15121e",
         // SUB-GROUP: "Tabs"
-        "tab.activeBackground": "#1A1D28",
+        "tab.activeBackground": "#1A1B22",
         "tab.activeBorderTop": "#55BBFF",
         "tab.unfocusedActiveBorderTop": "#55BBFFBB",
-        "tab.activeBorder": "#1A1D28", // Uses tab bg color to hide
-        "tab.unfocusedActiveBorder": "#1A1D28", // Uses tab bg color to hide
+        "tab.activeBorder": "#1A1B22", // Uses tab bg color to hide
+        "tab.unfocusedActiveBorder": "#1A1B22", // Uses tab bg color to hide
         "tab.activeForeground": "#DDDDDD",
         "tab.border": "#100503CC",
         "tab.inactiveBackground": "#1E212D",
@@ -321,13 +321,13 @@
         //"tab.activeModifiedBorder": "#3399cc",
         //"tab.inactiveModifiedBorder": "#3399cc80",
         "tab.lastPinnedBorder": "#006688",
-        //"tab.selectedBackground": "#1A1D28",
+        //"tab.selectedBackground": "#1A1B22",
         //"tab.selectedBorderTop": "#100503CC7780",
         //"tab.selectedForeground": "#e1e1e6",
-        //"tab.unfocusedActiveBackground": "#1A1D28",
+        //"tab.unfocusedActiveBackground": "#1A1B22",
         //"tab.unfocusedActiveForeground": "#e1e1e680",
         //"tab.unfocusedActiveModifiedBorder": "#3399cc80",
-        //"tab.unfocusedInactiveBackground": "#1A1D28",
+        //"tab.unfocusedInactiveBackground": "#1A1B22",
         //"tab.unfocusedInactiveModifiedBorder": "#3399cc40",
     },
     "tokenColors": [
