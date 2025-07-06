@@ -1,5 +1,5 @@
 # Oort Cloud Revery
 
-### 2025-JULY-07
+### Dev Notes: 2025-JULY-07
 
-Oort Cloud Revery is still under construction. A regular released version will be coming soon.
+Oort Cloud Revery is still under construction. A standard 1.x.x version will be released in the near future.
