@@ -20,6 +20,11 @@
                 "label": "Oort Cloud Reverie",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Oort Cloud Reverie-color-theme.json"
+            },
+                        {
+                "label": "Deep Blue Galactic Glow",
+                "uiTheme": "vs-dark",
+                "path": "./themes/deep-blue-galactic-glow-color-theme.json"
             }
         ]
     },
