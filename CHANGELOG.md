@@ -6,4 +6,4 @@
 
 [Keep a Changelog](http://keepachangelog.com/) Documentation ono the structure this file.
 
-## [0.0.3] Released the early beta version of the theme. Many of the color selection properties have been colored, but much more work needs to be done before a regular version will be released.
+## [1.0.0] Released the early beta version of the theme. Many of the color selection properties have been colored, but much more work needs to be done before a regular version will be released.

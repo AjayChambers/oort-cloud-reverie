@@ -1,33 +1,32 @@
 {
-  "name": "oort-cloud-reverie",
-  "displayName": "oort-cloud-reverie",
-  "description": "A dark bluish theme for VS Code. Created with C# TypeScript JavaScript CSS, Node.js and ASP.NET in mind.",
-  "license": "MIT",
-  "repository": {
-    "url": "https://github.com/AjayChambers/oort-cloud-reverie.git",
-    "type": "git"
-  },
-  "version": "0.0.3",
-  "engines": {
-    "vscode": "^1.100.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Oort Cloud Reverie",
-        "uiTheme": "vs-dark",
-        "path": "./themes/Oort Cloud Reverie-color-theme.json"
-      }
-    ]
-  },
-
-  "scripts": {
-    "vsce-publish": "",
-    "vsce-build": "",
-    "publish": "",
-    "build": ""
-  }
+    "name": "oort-cloud-reverie",
+    "displayName": "oort-cloud-reverie",
+    "description": "A dark bluish theme for VS Code. Created with C# TypeScript JavaScript CSS, Node.js and ASP.NET in mind.",
+    "license": "MIT",
+    "publisher": "W3Dojo",
+    "repository": "https://github.com/AjayChambers/oort-cloud-reverie.git",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "main": "themes/Oort Cloud Reverie-color-theme.json",
+    "activationEvents": [],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Oort Cloud Reverie",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Oort Cloud Reverie-color-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vsce-publish": "",
+        "vsce-build": "",
+        "publish": "",
+        "build": ""
+    }
 }
