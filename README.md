@@ -1,5 +1,5 @@
-# Oort Cloud Revery
+The official README.md for the third-party developed VS Code theme collection can 
+be found in the extensions **`docs`** directory located at...
 
-### Dev Notes: 2025-JULY-07
-
-Oort Cloud Revery is still under construction. A standard 1.x.x version will be released in the near future.
+1. `./docs/README.md`
+2. ``
