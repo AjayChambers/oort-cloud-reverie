@@ -320,7 +320,7 @@
         //"tab.unfocusedHoverForeground": null,
         //"tab.activeModifiedBorder": "#3399cc",
         //"tab.inactiveModifiedBorder": "#3399cc80",
-        "tab.lastPinnedBorder": "#006688",  
+        "tab.lastPinnedBorder": "#006688",
         //"tab.selectedBackground": "#1A1D28",
         //"tab.selectedBorderTop": "#100503CC7780",
         //"tab.selectedForeground": "#e1e1e6",
@@ -483,28 +483,29 @@
             |> JSON & JSONC DATA FORMATS
         *------------------------------------------*/
         {
-            "name": "JSON > Default Syntax Color",
-            "scope": [
-                "source.json"
-            ],
+            "name": "{JSON} Default Syntax Color",
+            "scope": "source.json",
             "settings": {
                 "foreground": "#96CCF5"
             }
         },
         {
-            "name": "JSON > Properties", // aka keys
-            "scope": [
-                "source.json support.type.property-name"
-            ],
+            "name": "{JSON} Keys",
+            "scope": "support.type.property-name.json",
+            "settings": {
+                "foreground": "#54A4FC"
+            }
+        },
+        {
+            "name": "{JSON} Values",
+            "scope": "string.quoted.double.json",
             "settings": {
                 "foreground": "#99d0fa"
             }
         },
         {
-            "name": "JSON > String Values",
-            "scope": [
-                "source.json string"
-            ],
+            "name": "{JSON} String Values",
+            "scope": "source.json string",
             "settings": {
                 "foreground": "#90C488"
             }
