@@ -1,7 +1,12 @@
 {
   "name": "oort-cloud-reverie",
   "displayName": "oort-cloud-reverie",
-  "description": "",
+  "description": "A dark bluish theme for VS Code. Created with C# TypeScript JavaScript CSS, Node.js and ASP.NET in mind.",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/AjayChambers/oort-cloud-reverie.git",
+    "type": "git"
+  },
   "version": "0.0.3",
   "engines": {
     "vscode": "^1.100.0"
