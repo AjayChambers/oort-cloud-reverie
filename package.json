@@ -22,5 +22,12 @@
         "path": "./themes/Oort Cloud Reverie-color-theme.json"
       }
     ]
+  },
+
+  "scripts": {
+    "vsce-publish": "",
+    "vsce-build": "",
+    "publish": "",
+    "build": ""
   }
 }
