@@ -17,9 +17,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Oort Cloud Reverie",
+                "label": "Dark Inner Galactic Space",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Oort Cloud Reverie-color-theme.json"
+                "path": "./themes/dark-inner-galactic-space-color-theme.json"
             },
                         {
                 "label": "Deep Blue Galactic Glow",
