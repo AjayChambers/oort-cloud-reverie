@@ -495,13 +495,20 @@
             }
         },
         {
-            "name": "{JSON} Values",
+            "name": "{JSON} Values String",
             "scope": [
                 "string.quoted.double.json",
                 "string.quoted.double.json punctuation.definition.string"
             ],
             "settings": {
                 "foreground": "#BB9955"
+            }
+        },
+        {
+            "name": "{JSON} Values Numeric",
+            "scope": "constant.numeric.json",
+            "settings": {
+                "foreground": "#b9476d"
             }
         },
     ]
