@@ -491,15 +491,18 @@
             "name": "{JSON} Keys",
             "scope": "support.type.property-name.json",
             "settings": {
-                "foreground": "#54A4FC"
+                "foreground": "#44AAFF"
             }
         },
         {
             "name": "{JSON} Values",
-            "scope": "string.quoted.double.json",
+            "scope": [
+                "string.quoted.double.json",
+                "string.quoted.double.json punctuation.definition.string"
+            ],
             "settings": {
-                "foreground": "#99d0fa"
+                "foreground": "#BB9955"
             }
-        }
+        },
     ]
 }
