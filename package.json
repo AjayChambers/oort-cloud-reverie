@@ -21,7 +21,7 @@
                 "uiTheme": "vs-dark",
                 "path": "./themes/dark-inner-galactic-space-color-theme.json"
             },
-                        {
+            {
                 "label": "Deep Blue Galactic Glow",
                 "uiTheme": "vs-dark",
                 "path": "./themes/deep-blue-galactic-glow-color-theme.json"
@@ -29,9 +29,9 @@
         ]
     },
     "scripts": {
-        "vsce-publish": "",
-        "vsce-build": "",
-        "publish": "",
-        "build": ""
+        "vsce-login": "vsce login w3dojo",
+        "compile-visx": "vsce -o \"./out/oort-cloud-reverie.vsix\"",
+        "publish-new": "vsce publish minor -i \"./out/oort-cloud-reverie.vsix\"",
+        "publish-fix": "vsce publish patch -i \"./out/oort-cloud-reverie.vsix\""
     }
 }
