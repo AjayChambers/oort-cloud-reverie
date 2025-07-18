@@ -6,7 +6,7 @@
     "publisher": "W3Dojo",
     "repository": "https://github.com/AjayChambers/oort-cloud-reverie.git",
     "version": "1.1.0",
-    "main": "themes/deep-blue-galactic-glow-color-theme.json",
+    "main": "src/main.js",
     "engines": {
         "vscode": "^1.100.0"
     },
