@@ -34,7 +34,7 @@
     "scripts": {
         "login": "vsce login w3dojo",
         "build": "vsce package --out ./out",
-        "publish-new": "vsce publish minor",
+        "publish": "vsce publish minor",
         "publish-fix": "vsce publish patch"
     }
 }
