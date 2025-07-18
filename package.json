@@ -6,13 +6,13 @@
     "publisher": "W3Dojo",
     "repository": "https://github.com/AjayChambers/oort-cloud-reverie.git",
     "version": "1.1.0",
+    "main": "themes/deep-blue-galactic-glow-color-theme.json",
     "engines": {
         "vscode": "^1.100.0"
     },
     "categories": [
         "Themes"
     ],
-    "main": "themes/deep-blue-galactic-glow-color-theme.json",
     "activationEvents": [],
     "contributes": {
         "themes": [
@@ -30,7 +30,7 @@
     },
     "scripts": {
         "login": "vsce login w3dojo",
-        "build": "vsce pack -o \"./out/oort-cloud-reverie.vsix\"",
+        "build": "vsce package --out out/oort-cloud-reverie.vsix",
         "publish-new": "vsce publish minor -i \"./out/oort-cloud-reverie.vsix\"",
         "publish-fix": "vsce publish patch -i \"./out/oort-cloud-reverie.vsix\""
     }
