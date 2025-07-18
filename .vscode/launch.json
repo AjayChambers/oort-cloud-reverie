@@ -5,9 +5,7 @@
                 "--extensionDevelopmentPath=${workspaceFolder}"
             ],
             "name": "Launch Extension",
-            "outFiles": [
-                "${workspaceFolder}/out/**/*.js"
-            ],
+            "outFiles": [],
             "preLaunchTask": "",
             "request": "launch",
             "type": "extensionHost"
