@@ -2,6 +2,7 @@
     "$schema": "vscode://schemas/color-theme",
     "type": "dark",
     "name": "Oort Cloud Reverie",
+    "semanticHighlighting": false,
     "colors": {
         /*
     *------------------------------------------------*
@@ -44,14 +45,12 @@
         "editor.wordHighlightStrongBackground": "#67e48050",
         "editorCodeLens.foreground": "#485E88",
         "editorError.foreground": "#e96379",
-        
         "editorGroup.border": "#44444444",
         "editorGroup.dropBackground": "#44475a70",
         "editorGroupHeader.noTabsBackground": "#222227",
         "editorGroupHeader.tabsBackground": "#222227",
         "editorGroupHeader.tabsBorder": "#120A0ACC",
         "editorGroupHeader.border": "#110000",
-        
         "editorGutter.addedBackground": "#67e48080",
         "editorGutter.deletedBackground": "#e9637980",
         "editorGutter.modifiedBackground": "#617ea380",
@@ -289,10 +288,6 @@
         *------------------------------------------------*
             *--* EDITOR TABS & TAB GROUPS *--*
         *------------------------------------------------*/
-        
-        
-        
-        
         // SUB-GROUP: Editor's Sticky Scroll
         "editorStickyScroll.shadow": "#0C040280",
         "editorStickyScroll.border": "#00000000",
@@ -343,7 +338,7 @@
             "name": "Default Syntax Color",
             "scope": "source",
             "settings": {
-                "foreground": "#C4C4C4"
+                "foreground": "#B2B5BB"
             }
         },
         {
@@ -374,7 +369,17 @@
             "name": "Punctuation",
             "scope": "punctuation",
             "settings": {
-                "foreground": "#98A0BB"
+                "foreground": "#B2B5BB"
+            }
+        },
+        {
+            "name": "[C++]: Accessor Type Punctuation ",
+            "scope": [
+                "punctuation.separator.scope-resolution",
+                "punctuation.separator.dot-access"
+            ],
+            "settings": {
+                "foreground": "#000000"
             }
         },
         {
@@ -384,22 +389,26 @@
                 "punctuation.definition.string"
             ],
             "settings": {
-                "foreground": "#BB6633"
+                "foreground": "#CC8866"
             }
         },
         {
             "name": "Primitive: Numeric",
             "scope": "constant.numeric",
             "settings": {
-                "foreground": "#c1a071"
+                "foreground": "#96C088"
             }
         },
         {
             "name": "Primitive: Boolean",
-            "scope": "constant.language.boolean",
+            "scope": [
+                "constant.language.true",
+                "constant.language.false",
+                "constant.language.boolean"
+            ],
             "settings": {
-                "foreground": "#449900",
-                "fontStyle": "italic bold"
+                "foreground": "#E46699",
+                "fontStyle": ""
             }
         },
         {
@@ -409,7 +418,7 @@
                 "constant.language.null"
             ],
             "settings": {
-                "foreground": "#BB6633",
+                "foreground": "#CC5544",
                 "fontStyle": "italic"
             }
         },
@@ -417,7 +426,7 @@
             "name": "Keyword: Storage",
             "scope": "storage",
             "settings": {
-                "foreground": "#2898F4",
+                "foreground": "#5599FF",
                 "fontStyle": ""
             }
         },
@@ -425,7 +434,7 @@
             "name": "Keyword: Control Flow",
             "scope": "keyword",
             "settings": {
-                "foreground": "#2898F4",
+                "foreground": "#5599FF",
                 "fontStyle": ""
             }
         },
@@ -437,7 +446,7 @@
                 "punctuation.accessor"
             ],
             "settings": {
-                "foreground": "#8899EE",
+                "foreground": "#5599FF",
                 "fontStyle": ""
             }
         },
@@ -445,7 +454,7 @@
             "name": "Variable",
             "scope": "variable",
             "settings": {
-                "foreground": "#bfc498"
+                "foreground": "#40C2E0"
             }
         },
         {
@@ -456,52 +465,111 @@
             }
         },
         {
-            "name": "Class, Type, Object",
+            "name": "Declarator Types, Generic Types",
             "scope": [
                 "entity.name.type",
+                "variable.other.object",
+                "source.cpp variable.other.object.access.cpp",
+            ],
+            "settings": {
+                "foreground": "#B2AAE4"
+            }
+        },
+        {
+            "name": "Functions, Methods",
+            "scope": [
+                "entity.name.function",
+                "entity.name.function.call",
                 "entity.name.type.class",
+                "entity.name.type.namespace",
                 "variable.other.object"
             ],
             "settings": {
-                "foreground": "#62BDB5"
+                "foreground": "#D0AF80"
+            }
+        },
+        /* 
+        	support.function.cmake
+    
+
+        *------------------------------------------*
+            |> CMake Build Language
+        *------------------------------------------*/
+        {
+            "name": "[CMAKE]",
+            "scope": "source.cmake",
+            "settings": {
+                "foreground": "#C4C4C4",
+                "fontStyle": ""
             }
         },
         {
-            "name": "Function/Method",
-            "scope": "entity.name.function",
+            "name": "[CMAKE] String, Quoted",
+            "scope": "source.cmake string.unquoted",
             "settings": {
-                "foreground": "#62BDB5"
+                "foreground": "#CC7755"
             }
         },
         {
-            "name": "Namespace",
-            "scope": "entity.name.type.namespace",
+            "name": "[CMAKE] String, Unquoted",
+            "scope": "source.cmake string.quoted",
             "settings": {
-                "foreground": "#BBBBBB"
+                "foreground": "#C5A888"
+            }
+        },
+        {
+            "name": "[CMAKE]",
+            "scope": [
+                "support.function.cmake",
+                "entity.name.function.cmake"
+            ],
+            "settings": {
+                "foreground": "#60B0EE",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "[CMake] Support Entities",
+            "scope": [
+                "source.cmake support.type",
+                "support.type.targetProperty.cmake",
+                "support.type.provideInfo",
+                "support.function.commandProperty.cmake"
+            ],
+            "settings": {
+                "foreground": "#96C088",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "",
+            "scope": "source.cmake keyword",
+            "settings": {
+                "foreground": "#AAA0DD"
             }
         },
         /*
-      
+        
 
         *------------------------------------------*
             |> JSON & JSONC DATA FORMATS
         *------------------------------------------*/
         {
-            "name": "{JSON} Default Syntax Color",
+            "name": "[JSON] Default Syntax Color",
             "scope": "source.json",
             "settings": {
-                "foreground": "#96CCF5"
+                "foreground": "#44AAFF"
             }
         },
         {
-            "name": "{JSON} Keys",
+            "name": "[JSON] Keys",
             "scope": "support.type.property-name.json",
             "settings": {
                 "foreground": "#44AAFF"
             }
         },
         {
-            "name": "{JSON} Values String",
+            "name": "[JSON] Values String",
             "scope": [
                 "string.quoted.double.json",
                 "string.quoted.double.json punctuation.definition.string"
@@ -511,7 +579,7 @@
             }
         },
         {
-            "name": "{JSON} Values Numeric",
+            "name": "[JSON] Values Numeric",
             "scope": "constant.numeric.json",
             "settings": {
                 "foreground": "#bb5c7c"

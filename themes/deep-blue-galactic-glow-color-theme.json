@@ -1,7 +1,8 @@
 {
 	"$schema": "vscode://schemas/color-theme",
 	"type": "dark",
-    "name": "Oort Cloud Reverie",
+	"name": "Oort Cloud Reverie",
+	"semanticHighlighting": false,
 	"colors": {
 		"activityBar.activeBackground": "#55bbff11",
 		"activityBar.activeBorder": "#55bbff",
@@ -894,13 +895,19 @@
 		//"window.inactiveBorder": null
 	},
 	"tokenColors": [
+		/*
+        *************************************************************
+                      -- DEFAULT SYNTAX HIGHLIGHTING --
+        ******************************x******************************/
 		{
+			"name": "Default Syntax Color",
 			"scope": "source",
 			"settings": {
-				"foreground": "#C4C4C4"
+				"foreground": "#B2B5BB"
 			}
 		},
 		{
+			"name": "Comment",
 			"scope": [
 				"comment",
 				"punctuation.definition.comment"
@@ -910,161 +917,238 @@
 			}
 		},
 		{
+			"name": "Comments: XML Docs (tag words)",
 			"scope": "comment.block.documentation entity.name.tag",
 			"settings": {
 				"foreground": "#446622"
 			}
 		},
 		{
+			"name": "Comments: XML Docs (tag brackets)",
 			"scope": "comment.block.documentation punctuation.definition.tag",
 			"settings": {
 				"foreground": "#603080"
 			}
 		},
 		{
+			"name": "Punctuation",
 			"scope": "punctuation",
 			"settings": {
-				"foreground": "#98A0BB"
+				"foreground": "#B2B5BB"
 			}
 		},
 		{
+			"name": "[C++]: Accessor Type Punctuation ",
+			"scope": [
+				"punctuation.separator.scope-resolution",
+				"punctuation.separator.dot-access"
+			],
+			"settings": {
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "Primitive: String",
 			"scope": [
 				"string.quoted",
 				"punctuation.definition.string"
 			],
 			"settings": {
-				"foreground": "#BB6633"
+				"foreground": "#CC8866"
 			}
 		},
 		{
+			"name": "Primitive: Numeric",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#C1A071"
+				"foreground": "#96C088"
 			}
 		},
 		{
-			"scope": "constant.language.boolean",
+			"name": "Primitive: Boolean",
+			"scope": [
+				"constant.language.true",
+				"constant.language.false",
+				"constant.language.boolean"
+			],
 			"settings": {
-				"foreground": "#449900",
-				"fontStyle": "italic bold"
+				"foreground": "#E46699",
+				"fontStyle": ""
 			}
 		},
 		{
+			"name": "Primitive: Nullish",
 			"scope": [
 				"constant.null",
 				"constant.language.null"
 			],
 			"settings": {
-				"foreground": "#BB6633",
+				"foreground": "#CC5544",
 				"fontStyle": "italic"
 			}
 		},
 		{
+			"name": "Keyword: Storage",
 			"scope": "storage",
 			"settings": {
-				"foreground": "#2898F4",
+				"foreground": "#5599FF",
 				"fontStyle": ""
 			}
 		},
 		{
+			"name": "Keyword: Control Flow",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#2898F4",
+				"foreground": "#5599FF",
 				"fontStyle": ""
 			}
 		},
 		{
+			"name": "Operator",
 			"scope": [
 				"keyword.operator",
 				"punctuation.separator.question-mark",
 				"punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#8899EE",
+				"foreground": "#5599FF",
 				"fontStyle": ""
 			}
 		},
 		{
+			"name": "Variable",
 			"scope": "variable",
 			"settings": {
-				"foreground": "#BFC498"
+				"foreground": "#40C2E0"
 			}
 		},
 		{
+			"name": "Variables: Parameters, Properties, & Fields",
 			"scope": "entity.name.variable",
 			"settings": {
 				"foreground": "#88C4E8"
 			}
 		},
 		{
+			"name": "Declarator Types, Generic Types",
 			"scope": [
 				"entity.name.type",
+				"variable.other.object",
+				"source.cpp variable.other.object.access.cpp",
+			],
+			"settings": {
+				"foreground": "#B2AAE4"
+			}
+		},
+		{
+			"name": "Functions, Methods",
+			"scope": [
+				"entity.name.function",
+				"entity.name.function.call",
 				"entity.name.type.class",
+				"entity.name.type.namespace",
 				"variable.other.object"
 			],
 			"settings": {
-				"foreground": "#62BDB5"
+				"foreground": "#D0AF80"
 			}
 		},
+		/* 
+        	support.function.cmake
+    
+
+        *------------------------------------------*
+            |> CMake Build Language
+        *------------------------------------------*/
 		{
-			"scope": "entity.name.function",
+			"name": "[CMAKE]",
+			"scope": "source.cmake",
 			"settings": {
-				"foreground": "#62BDB5"
+				"foreground": "#C4C4C4",
+				"fontStyle": ""
 			}
 		},
 		{
-			"scope": "entity.name.type.namespace",
+			"name": "[CMAKE] String, Quoted",
+			"scope": "source.cmake string.unquoted",
 			"settings": {
-				"foreground": "#BBBBBB"
+				"foreground": "#CC7755"
 			}
 		},
 		{
+			"name": "[CMAKE] String, Unquoted",
+			"scope": "source.cmake string.quoted",
+			"settings": {
+				"foreground": "#C5A888"
+			}
+		},
+		{
+			"name": "[CMAKE]",
 			"scope": [
-				"source.json"
+				"support.function.cmake",
+				"entity.name.function.cmake"
 			],
 			"settings": {
-				"foreground": "#96CCF5"
+				"foreground": "#60B0EE",
+				"fontStyle": ""
 			}
 		},
 		{
+			"name": "[CMake] Support Entities",
 			"scope": [
-				"source.json support.type.property-name"
+				"source.cmake support.type",
+				"support.type.targetProperty.cmake",
+				"support.type.provideInfo",
+				"support.function.commandProperty.cmake"
 			],
 			"settings": {
-				"foreground": "#99D0FA"
+				"foreground": "#96C088",
+				"fontStyle": ""
 			}
 		},
 		{
+			"name": "",
+			"scope": "source.cmake keyword",
+			"settings": {
+				"foreground": "#AAA0DD"
+			}
+		},
+		/*
+        
+
+        *------------------------------------------*
+            |> JSON & JSONC DATA FORMATS
+        *------------------------------------------*/
+		{
+			"name": "[JSON] Default Syntax Color",
+			"scope": "source.json",
+			"settings": {
+				"foreground": "#44AAFF"
+			}
+		},
+		{
+			"name": "[JSON] Keys",
+			"scope": "support.type.property-name.json",
+			"settings": {
+				"foreground": "#44AAFF"
+			}
+		},
+		{
+			"name": "[JSON] Values String",
 			"scope": [
-				"source.json string"
+				"string.quoted.double.json",
+				"string.quoted.double.json punctuation.definition.string"
 			],
 			"settings": {
-				"foreground": "#90C488"
+				"foreground": "#BB9955"
 			}
 		},
 		{
-			"scope": "token.info-token",
+			"name": "[JSON] Values Numeric",
+			"scope": "constant.numeric.json",
 			"settings": {
-				"foreground": "#6796E6"
+				"foreground": "#bb5c7c"
 			}
 		},
-		{
-			"scope": "token.warn-token",
-			"settings": {
-				"foreground": "#CD9731"
-			}
-		},
-		{
-			"scope": "token.error-token",
-			"settings": {
-				"foreground": "#F44747"
-			}
-		},
-		{
-			"scope": "token.debug-token",
-			"settings": {
-				"foreground": "#B267E6"
-			}
-		}
 	]
 }
