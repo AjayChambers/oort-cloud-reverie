@@ -34,7 +34,7 @@
     "scripts": {
         "login": "vsce login w3dojo",
         "build": "vsce package --out ./out",
-        "publish-new": "vsce publish minor -i \"./out/oort-cloud-reverie.vsix\"",
-        "publish-fix": "vsce publish patch -i \"./out/oort-cloud-reverie.vsix\""
+        "publish-new": "vsce publish minor",
+        "publish-fix": "vsce publish patch"
     }
 }
