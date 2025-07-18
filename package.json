@@ -29,7 +29,7 @@
         ]
     },
     "scripts": {
-        "vsce-login": "vsce login w3dojo",
+        "login": "vsce login w3dojo",
         "build": "vsce pack -o \"./out/oort-cloud-reverie.vsix\"",
         "publish-new": "vsce publish minor -i \"./out/oort-cloud-reverie.vsix\"",
         "publish-fix": "vsce publish patch -i \"./out/oort-cloud-reverie.vsix\""
