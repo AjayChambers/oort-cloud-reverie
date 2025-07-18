@@ -5,6 +5,5 @@ out/
 
 # IGNORE BY FILENAME
 docs/Dev-Notes.md
-.vscodeignore
 .gitattributes
 .gitignore
