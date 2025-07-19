@@ -112,6 +112,8 @@
         "statusBarItem.offlineHoverForeground": "#768390",
         "statusBar.background": "#203458", //"#0C2C64",
         "statusBar.foreground": "#CEE8FC",
+        "statusBar.debuggingForeground": "#AAEE88",
+        "statusBar.noFolderForeground": "#e1e1e6",
         "statusBar.border": "#50A0FF20",
         "statusBarItem.remoteBackground": "#344CAC",
         "statusBarItem.remoteForeground": "#EEEEEE",
@@ -119,14 +121,20 @@
         "statusBarItem.remoteHoverForeground": "#DDFF66",
         "statusBar.debuggingBackground": "#1C202A",
         "statusBar.noFolderBackground": "#1C202A",
-        "statusBar.debuggingForeground": "#120A0ACC",
-        "statusBar.noFolderForeground": "#e1e1e6",
         "statusBarItem.prominentBackground": "#e96379",
         "statusBarItem.prominentHoverBackground": "#e89e64",
         "statusBarItem.errorBackground": "#88000044",
         "statusBarItem.errorForeground": "#E84850",
         "statusBar.focusBorder": "#FFBB55",
         "statusBarItem.focusBorder": "#FFBB55",
+        /*
+      *------------------------------------------------*
+         --SIDEBAR'S DEBUGGING VIEW --
+      *------------------------------------------------*/
+        "debugView.exceptionLabelBackground": "#800000",
+        "debugExceptionWidget.background": "#281218",
+        "debugExceptionWidget.border": "#800818",
+        "debugView.exceptionLabelForeground": "#EEEEEE",
         //"statusBarItem.activeBackground": "#ffffff2e",
         //"statusBarItem.compactHoverBackground": "#ffffff33",
         //"statusBarItem.errorHoverBackground": "#ffffff1f",
@@ -376,10 +384,13 @@
             "name": "[C++]: Accessor Type Punctuation ",
             "scope": [
                 "punctuation.separator.scope-resolution",
-                "punctuation.separator.dot-access"
+                "punctuation.separator.dot-access",
+                "punctuation.separator.pointer-access",
+                "storage.type.function.arrow"
             ],
             "settings": {
-                "foreground": "#000000"
+                "foreground": "#409CFC",
+                "fontStyle": ""
             }
         },
         {
@@ -426,7 +437,7 @@
             "name": "Keyword: Storage",
             "scope": "storage",
             "settings": {
-                "foreground": "#5599FF",
+                "foreground": "#409CFC",
                 "fontStyle": ""
             }
         },
@@ -434,7 +445,7 @@
             "name": "Keyword: Control Flow",
             "scope": "keyword",
             "settings": {
-                "foreground": "#5599FF",
+                "foreground": "#409CFC",
                 "fontStyle": ""
             }
         },
@@ -446,7 +457,7 @@
                 "punctuation.accessor"
             ],
             "settings": {
-                "foreground": "#5599FF",
+                "foreground": "#409CFC",
                 "fontStyle": ""
             }
         },
